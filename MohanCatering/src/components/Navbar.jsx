@@ -37,7 +37,7 @@ function Navbar() {
           {[
             { to: '/', label: 'Home' },
             { to: '/services', label: 'Services' },
-            { to: '/about', label: 'About' },
+            { to: '/aboutus', label: 'AboutUs' },
             { to: '/gallary', label: 'Gallary' },
             { to: '/socialmedia', label: 'SocialMedia' },
             { to: '/contact', label: 'Contact' },
@@ -64,7 +64,7 @@ function Navbar() {
       <div className="hidden md:flex md:items-center gap-6 text-lg font-medium">
         {[
           { to: '/services', label: 'Services' },
-          { to: '/about', label: 'About' },
+          { to: '/aboutus', label: 'AboutUs' },
           { to: '/gallary', label: 'Gallary' },
           { to: '/socialmedia', label: 'SocialMedia' },
           { to: '/contact', label: 'Contact' },
