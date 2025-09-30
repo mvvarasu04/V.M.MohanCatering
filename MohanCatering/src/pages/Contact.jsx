@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-
+import qrphoto from '../assets/images/qrphoto.png'
 const usePulseEffect = (ref, status) => {
   useEffect(() => {
     const element = ref.current;
@@ -59,11 +59,7 @@ const ContactPage = () => {
     }, 3500);
   };
 
-  const handleCopyEmail = () => {
-    const email = 'vmmohan.events@gmail.com';
-    navigator.clipboard.writeText(email);
-    alert(`Email "${email}" copied to clipboard!`);
-  };
+ 
 
   const buttonText = {
     idle: 'Send the Dream! ✨',
@@ -86,28 +82,36 @@ const ContactPage = () => {
           <div className="mt-4 space-y-3">
             <p className="text-gray-700">
               📍 <span className="font-semibold">Address:</span>  
-              No. 123, Celebration Street, Coimbatore, Tamil Nadu
+             M.G.R Nagar,Perur,  Coimbatore, Tamil Nadu-641 010.
             </p>
             <p className="text-gray-700">
-              📞 <span className="font-semibold">Mobile:</span> +91 98765 43210
+              📞 <span className="font-semibold">Mobile:</span>   
+              <a href="tel:+916369126125" className="text-bold text-xl hover:text-blue-800 transition-colors duration-200">+91 8973726220</a>
+               
             </p>
+            <p className="text-gray-700">
+              📞 <span className="font-semibold">Mobile:</span>  
+            <a href="tel:+919994063960" className="text-bold text-xl hover:text-blue-800 transition-colors duration-200">+91 9994063960</a></p>
             <p className="text-gray-700">
               ✉️ <span className="font-semibold">Email:</span> vmmohan.events@gmail.com
             </p>
+            <p className='text-center'><a href="https://maps.app.goo.gl/Z7NK2zdMdzNST2LB9" target='blank'>Click for Location</a></p>
           </div>
 
           {/* QR Code (replace src with actual QR code image link) */}
           <div className="mt-6 flex justify-center">
             <img
-              src="https://api.qrserver.com/v1/create-qr-code/?data=+919876543210&size=150x150"
+              src={qrphoto}
               alt="Location QR"
-              className="rounded-lg shadow-md"
+              className="rounded-lg shadow-md h-40"
             />
+            <br />
+           
           </div>
 
           {/* Something Extra */}
           <div className="mt-6 p-4 bg-indigo-50 rounded-lg">
-            <p className="text-indigo-700 font-semibold">✨ Extra</p>
+            <p className="text-indigo-700 font-semibold"></p>
             <p className="text-gray-600 text-sm mt-1">
               Book us for Weddings, Corporate Events, Parties & More.  
               Quality food. Unforgettable experiences. 🌟
@@ -154,14 +158,14 @@ const ContactPage = () => {
 
             <div>
               <label className="block text-sm font-medium text-gray-700">
-                The Vision/Problem (Tell us everything!)
+                 Tell us everything!
               </label>
               <textarea
                 name="message"
                 value={formData.message}
                 onChange={handleChange}
                 rows="5"
-                placeholder="What's the challenge we can solve together?"
+                placeholder= "Hungry for something unforgettable? Reach out and let us serve the magic!"
                 required
                 className="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500 transition duration-150"
               ></textarea>
@@ -182,10 +186,7 @@ const ContactPage = () => {
             </button>
           </form>
 
-          <div className="mt-10 text-center">
-            <p className="text-gray-600 mb-4">Prefer to skip the form?</p>
-            
-          </div>
+         
         </div>
       </div>
     </div>
