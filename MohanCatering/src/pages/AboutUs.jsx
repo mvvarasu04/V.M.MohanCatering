@@ -63,7 +63,7 @@ const AboutUs = () => {
         </p>
       </section>
 
-      <hr className="border-dashed bordet-blue-300 my-8" />
+      
 
       {/* Mission & Vision */}
       <section className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
@@ -83,7 +83,7 @@ const AboutUs = () => {
         </div>
       </section>
 
-      <hr className="border-dashed bordet-blue-300 my-8" />
+      
 
       {/* Reviews Section */}
       <section className="max-w-5xl mx-auto mb-12">
@@ -106,7 +106,7 @@ const AboutUs = () => {
         </div>
 
         {/* Written Reviews */}
-        <h2 className="text-xl font-semibold text-blue-500 mb-4">What Our Clients Say</h2>
+        <h2 className="text-xl font-semibold text-blue-500 mb-4">Random Reviews</h2>
         <div className="grid md:grid-cols-2 gap-6">
           {reviews.map((review) => (
             <div key={review.id} className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition">

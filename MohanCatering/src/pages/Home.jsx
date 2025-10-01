@@ -36,14 +36,14 @@ export const Home = () => {
           backgroundImage: `url(${BackgroundVM})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          minHeight: '100vh', // Changed height to minHeight for content overflow
+          minHeight: '100vh', 
         }}
         className='flex flex-col items-center justify-center px-4 sm:px-8'
       >
-        {/* Adjusted text sizing to ensure it doesn't overwhelm smaller screens */}
+        
         <h1 className='font-bold text-3xl sm:text-5xl lg:text-6xl text-green-600 text-center py-6 font-serif'>
           V.M Mohan <br />
-          {/* Main heading size is smaller on mobile (text-2xl) */}
+          
           <span className='text-black text-xl sm:text-3xl font-sans'>Catering & Events</span>
         </h1>
 
@@ -51,9 +51,9 @@ export const Home = () => {
           Food is symbolic of Love💚 <span className='text-black'>when words are inadequate...</span>
         </h2>
 
-        {/* Adjusted image size for better mobile display and reduced gap */}
+        
         <div className='flex flex-wrap justify-center items-center gap-3 py-6'>
-          <img src={vmc3} alt="Mohan Catering Image" className='w-32 sm:w-60 lg:w-72 h-auto rounded-lg shadow-md' />
+          
           <img src={vmc2} alt="Mohan Catering Image" className='w-32 sm:w-60 lg:w-72 h-auto rounded-lg shadow-md' />
         </div>
 
