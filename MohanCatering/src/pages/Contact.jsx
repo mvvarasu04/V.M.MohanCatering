@@ -76,7 +76,8 @@ const ContactPage = () => {
         <div className="bg-white p-8 rounded-xl shadow-2xl flex flex-col justify-center">
           <h2 className="text-2xl font-bold text-indigo-700 mb-4">
             V.M Mohan Caterings & Events
-          </h2>
+          </h2>  
+          
           <p className="text-gray-600 mb-2">🍽️ Premium Catering & Memorable Events</p>
           
           <div className="mt-4 space-y-3">
@@ -86,14 +87,14 @@ const ContactPage = () => {
             </p>
             <p className="text-gray-700">
               📞 <span className="font-semibold">Mobile:</span>   
-              <a href="tel:+916369126125" className="text-bold text-xl hover:text-blue-800 transition-colors duration-200">+91 8973726220</a>
+              <a href="tel:+918973726220" className="text-bold text-xl hover:text-blue-800 transition-colors duration-200">+91 8973726220</a>
                
             </p>
             <p className="text-gray-700">
               📞 <span className="font-semibold">Mobile:</span>  
             <a href="tel:+919994063960" className="text-bold text-xl hover:text-blue-800 transition-colors duration-200">+91 9994063960</a></p>
             <p className="text-gray-700">
-              ✉️ <span className="font-semibold">Email:</span> vmmohan.events@gmail.com
+              ✉️ <span className="font-semibold">Email:</span> mohancateringsatoz@gmail.com
             </p>
             <p className='text-center'><a href="https://maps.app.goo.gl/Z7NK2zdMdzNST2LB9" target='blank'>Click for Location</a></p>
           </div>

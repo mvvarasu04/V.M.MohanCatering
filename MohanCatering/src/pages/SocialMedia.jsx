@@ -57,7 +57,7 @@ const socialMediaData = [
     name: 'WhatsApp',
     message: 'Chat with us for bookings and info.',
     icon: wavm,
-    link: 'https://wa.me/919876543210',
+    link: 'https://wa.me/918973726220',
     bg: 'bg-green-500',
     hover: 'hover:bg-green-600',
   },

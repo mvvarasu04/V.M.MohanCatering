@@ -169,7 +169,7 @@ const Services = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            Our Great **Catering Services** 🍽️
+            Our Great Services
           </motion.h1>
           <motion.p 
             className='mt-4 text-xl text-gray-600 max-w-3xl mx-auto'
@@ -178,7 +178,7 @@ const Services = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            At **V.M MOHAN CATERINGS & EVENTS**, we bring flavor, flair, and flawless execution to every event. 
+            At V.M MOHAN CATERINGS & EVENTS , we bring flavor, flair, and flawless execution to every event. 
             Our catering services are designed to delight your guests and make your occasion unforgettable.
           </motion.p>
         </div>

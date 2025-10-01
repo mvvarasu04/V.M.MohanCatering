@@ -21,8 +21,30 @@ const AboutUs = () => {
       name: "Sowmya V.",
       rating: "★★★★★",
       text: "We used them for a small family gathering, and they brought the same finesse and care as a large event. The *kalyana virundhu* style menu was a hit! We've found our caterer for life.",
-      date: "January 2025"
-    }
+      date: "January 2024"
+    },
+    {
+      id: 4,
+      name: "Faseela Parvin",
+      rating: "★★★★★",
+      text: "Best catering services 😍😍😍They work very kindly and best ✨✨ …",
+      date: "July 2023"
+    },
+    {
+      id: 5,
+      name: "Sathiyam sss",
+      rating: "★★★★★",
+      text: "Best catering services for middle class peopels.......Both pricewice and quality wice good.....",
+      date: "May 2023"
+    },
+    {
+      id: 6,
+      name: "Justin ",
+      rating: "★★★★★",
+      text: "Excellent service and quality food. Highly recommended for any event. Briyani was top-notch!",
+      date: "November 2022"
+    },
+
   ];
 
   const videoId = 'nhaWFgnETVA?si=xuw1ObwCeE_i4N9K';
