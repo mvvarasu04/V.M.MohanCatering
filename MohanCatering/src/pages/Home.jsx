@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BackgroundVM from '../assets/images/BackgroundVM.png';
 import vmc2 from '../assets/images/vmc2.png';
-import vmc3 from '../assets/images/vmc3.png';
+import awardimg from '../assets/images/awardimg.jpeg';
 import BackgroundVM3 from '../assets/images/BackgroundVM3.png';
 // import images
 import Heritage from '../assets/images/Heritage.png';
@@ -52,9 +52,9 @@ export const Home = () => {
         </h2>
 
         
-        <div className='flex flex-wrap justify-center items-center gap-3 py-6'>
+        <div className=' items-center gap-3 py-6'>
           
-          <img src={vmc2} alt="Mohan Catering Image" className='w-32 sm:w-60 lg:w-72 h-auto rounded-lg shadow-md' />
+          <img src={awardimg} alt="Mohan Catering Image" className='w-32 sm:w-f lg:w-full h-auto rounded-lg shadow-md' />
         </div>
 
         <div className='text-center'>

@@ -1,5 +1,6 @@
 import React from 'react'
-
+import visitingcard1 from '../assets/images/visitingcard1.jpeg';
+import vmlogo from "../assets/images/vmlogo.jpeg"
 
 import { Link } from 'react-router-dom';
 
@@ -14,6 +15,9 @@ const Footer = () => {
           <p className="text-sm text-white">
            From First Bite to Forever Memory
           </p>
+          <img src={vmlogo}
+           alt="VM Mohan Catering Visiting card"
+           className='w-50 h-auto rounded-full' />
         </div>
 
         {/* Navigation Links */}
@@ -45,6 +49,9 @@ const Footer = () => {
       {/* Bottom Line */}
       <div className="mt-8 text-center text-sm text-gray-100">
         © {new Date().getFullYear()} V.M.MOHAN CATERINGS . All rights reserved.
+        <p>
+          Designed by <a href="mailto:mvvarasu@gmail.com" className="text-white font-bold hover:text-blue-400 ">VeeraVanniyaArasu M</a>
+        </p>
       </div>
     </footer>
   );
