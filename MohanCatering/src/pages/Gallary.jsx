@@ -17,13 +17,24 @@ import sweet11 from "../assets/images/sweet11.jpeg";
 import sweet12 from "../assets/images/sweet12.jpeg"; 
 import sweet13 from "../assets/images/sweet13.jpeg"; 
 import sweet14 from "../assets/images/sweet14.jpeg";
+import sweet15 from "../assets/images/sweet15.jpeg";
+import sweet16 from "../assets/images/sweet16.jpeg";
+import sweet17 from "../assets/images/sweet17.jpeg";
+import sweet18 from "../assets/images/sweet18.jpeg";
+
 
 import gang1 from "../assets/images/gang1.jpeg";
 import gang2 from "../assets/images/gang2.jpeg";
 import gang3 from "../assets/images/gang3.jpeg";
+import gang4 from "../assets/images/gang4.jpeg";
 import marriage1 from '../assets/images/marriage1.jpeg';
 import marriage2 from '../assets/images/marriage2.jpeg';
 import marriage3 from '../assets/images/marriage3.jpeg';
+import marriage8 from '../assets/images/marriage8.jpeg';
+import image01 from '../assets/images/image01.jpeg'; 
+import image1 from '../assets/images/image1.jpeg';
+import image2 from '../assets/images/image2.jpeg';
+import image3 from '../assets/images/image3.jpeg'; 
 import img1 from "../assets/images/img1.jpeg";
 import img2 from "../assets/images/img2.jpeg";
 import img3 from "../assets/images/img3.jpeg";
@@ -34,11 +45,16 @@ import img3 from "../assets/images/img3.jpeg";
 // DATA ARRAYS
 const sweetimages = [
     sweet1, sweet2, sweet3, sweet4, sweet5, sweet6, sweet7, sweet8, 
-    sweet9, sweet10, sweet11, sweet12, sweet13, sweet14,
+    sweet9, sweet10, sweet11, sweet12, sweet13, sweet14,sweet15, sweet16, sweet17, sweet18
 ];
 
 const gangimages = [
-    gang1, gang2, gang3, marriage1, marriage2, marriage3, img1, img2, img3
+    gang1, gang2, gang3,gang4, marriage1, marriage2, marriage3,marriage8,
+    image01,image1,image2,image3, img1, img2, img3
+];
+
+const videos = [
+
 ];
 
 

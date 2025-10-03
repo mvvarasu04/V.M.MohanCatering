@@ -3,10 +3,15 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { motion } from 'framer-motion';
 
 // Video Imports
-import review7 from '../assets/videos/review7.mp4';
-import review010 from '../assets/videos/review010.mp4' ; 
-import review011 from '../assets/videos/review011.mp4' ; 
-import reviewvideo1 from '../assets/videos/reviewvideo1.mp4' ; 
+import reviewvid1 from '../assets/videos/reviewvid1.mp4';
+import reviewvid2 from '../assets/videos/reviewvid2.mp4' ; 
+import reviewvid3 from '../assets/videos/reviewvid3.mp4' ; 
+import reviewvid4 from '../assets/videos/reviewvid4.mp4' ;
+import reviewvid5 from '../assets/videos/reviewvid5.mp4' ;
+import reviewvid6 from '../assets/videos/reviewvid6.mp4' ;
+import reviewvid7 from '../assets/videos/reviewvid7.mp4' ;
+import reviewvid8 from '../assets/videos/reviewvid8.mp4' ;
+import reviewvid9 from '../assets/videos/reviewvid9.mp4' ; 
 
 const AboutUs = () => {
     const reviews = [
@@ -55,14 +60,14 @@ const AboutUs = () => {
     ];
 
     const reviewvideos = [
-        review7,
-        review010,
-        review011,
-        reviewvideo1
+        reviewvid1, reviewvid2,reviewvid3,reviewvid4,reviewvid5,
+        reviewvid6,reviewvid7,reviewvid8,reviewvid9
     ];
 
     // Video Carousel Logic
     const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+    // New state to manage controls visibility on hover
+    const [showControls, setShowControls] = useState(false); 
     
     const totalVideos = reviewvideos.length;
     
@@ -82,6 +87,7 @@ const AboutUs = () => {
 
     
     return (
+        
         <div className="bg-gradient-to-b from-green-200 to-green-300 text-brown-800 px-6 py-12 font-serif">
             
             {/* Our Story */}
@@ -123,31 +129,37 @@ const AboutUs = () => {
                     </p>
                     <div className="flex justify-center">
                         {/* Container for the carousel frame */}
-                        <div className="relative w-full max-w-sm sm:max-w-md">
+                        {/* Add event handlers to the outer container */}
+                        <div 
+                            className="relative w-full max-w-sm sm:max-w-md group"
+                            onMouseEnter={() => setShowControls(true)}
+                            onMouseLeave={() => setShowControls(false)}
+                        >
                             
                             {/* Video Container to force Portrait Aspect Ratio (9:16) */}
                             <div className="relative w-full pb-[177.77%] overflow-hidden rounded-xl shadow-2xl bg-black"> 
-                                {/* pb-[177.77%] is for a 9:16 aspect ratio (16 / 9 * 100) */}
                                 <motion.video
                                     key={currentVideoIndex} 
                                     initial={{ opacity: 0 }}
                                     animate={{ opacity: 1 }}
                                     transition={{ duration: 0.5 }}
                                     src={reviewvideos[currentVideoIndex]}
-                                    controls // This ensures the controls (pause, mute, etc.) are always visible
+                                    
+                                    // CONDITIONAL CONTROLS: Render 'controls' attribute only when showControls is true
+                                    {...(showControls ? { controls: true } : {})} 
+                                    
                                     autoPlay
-                                    muted
+                                    
                                     loop
-                                   
-                                    // object-cover ensures it fills the portrait container (cropping landscape video if needed)
+                                    playsInline
                                     className="absolute top-0 left-0 w-full h-full object-cover" 
                                 >
                                     Your browser does not support the video tag.
                                 </motion.video>
                             </div>
                             
-                            {/* Navigation Buttons */}
-                            <div className="absolute inset-y-0 flex justify-between w-full p-2">
+                            {/* Navigation Buttons - Visibility can also be controlled by group-hover */}
+                            <div className="absolute inset-y-0 flex justify-between w-full p-2 transition-opacity duration-300 opacity-100 group-hover:opacity-100">
                                 <button
                                     onClick={goToPrev}
                                     className="self-center bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-75 transition disabled:opacity-30 disabled:cursor-not-allowed"

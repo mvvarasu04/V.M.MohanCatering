@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import BackgroundVM from '../assets/images/BackgroundVM.png';
-import vmc2 from '../assets/images/vmc2.png';
 import awardimg from '../assets/images/awardimg.jpeg';
 import BackgroundVM3 from '../assets/images/BackgroundVM3.png';
-// import images
+import homewed from '../assets/images/homewed.png';
+import homebir from '../assets/images/homebir.png';
+import homecor from '../assets/images/homecor.png';
 import Heritage from '../assets/images/Heritage.png';
 import Taste from '../assets/images/Taste.png';
 import Quality from '../assets/images/Quality.png';
@@ -32,12 +33,7 @@ export const Home = () => {
   return (
     <>
       <div
-        style={{
-          backgroundImage: `url(${BackgroundVM})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-          minHeight: '100vh', 
-        }}
+        
         className='flex flex-col items-center justify-center px-4 sm:px-8'
       >
         
@@ -71,13 +67,7 @@ export const Home = () => {
 
       {/* --- */}
 
-      <div
-        style={{
-          backgroundImage: `url(${BackgroundVM3})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-        className='mb-5 py-10 px-4 sm:px-8 text-center'
+      <div  className='mb-5 py-10 px-4 sm:px-8 text-center'
       >
         {/* Ensured all heading sizes are well-controlled on mobile */}
         <h1 className='text-xl sm:text-3xl font-bold mb-2'>Forget the old-school catering. <br />Welcome to V.M. Mohan Caterers.</h1>
@@ -100,18 +90,18 @@ export const Home = () => {
             
             <div className='p-4 justify-center     border-4 rounded-lg transition duration-300 border-green-500 shadow-lg hover:shadow-green-500 hover:scale-105 bg-white/80'>   
               <h2 className='text-lg font-bold text-green-700 mb-2'>Wedding Event</h2>
-              <img src={vmc2} alt="Mohan Catering Image" className='w-auto h-auto rounded-lg shadow-md gap-4 ' />
+              <img src={homewed} alt="Mohan Catering Image" className='w-auto h-auto rounded-lg shadow-md gap-4 ' />
               <p className='text-sm text-gray-700 py-4'>From banana leaf tales to gourmet grace, We serve memories wrapped in every plate...</p>
             </div>
             <div className='p-4 border-4 rounded-lg transition duration-300 border-pink-500 shadow-lg hover:shadow-pink-500 hover:scale-105 bg-white/80'>
              
               <h2 className='text-lg font-bold text-pink-700 mb-2'>Cakes & Candles Party</h2>
-              <img src={vmc2} alt="Mohan Catering Image" className='w-auto h-auto rounded-lg shadow-md ' />
+              <img src={homebir} alt="Mohan Catering Image" className='w-auto h-auto rounded-lg shadow-md ' />
               <p className='text-sm text-gray-700 py-4'>Balloons rise, laughter flows, We serve joy where flavor glows...</p>
             </div>
             <div className='p-4 border-4 rounded-lg transition duration-300 border-blue-500 shadow-lg hover:shadow-blue-500 hover:scale-105 bg-white/80'>
               <h2 className='text-lg font-bold text-blue-700 mb-2'>Corporate Event</h2>
-               <img src={vmc2} alt="Mohan Catering Image" className='w-auto h-auto rounded-lg shadow-md ' />
+               <img src={homecor} alt="Mohan Catering Image" className='w-auto h-auto rounded-lg shadow-md ' />
               <p className='text-sm text-gray-700'>Ideas ignite, connections grow, We fuel moments that steal the show...</p>
             </div>
           </div>

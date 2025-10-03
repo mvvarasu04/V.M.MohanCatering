@@ -1,6 +1,6 @@
 import React from 'react'
 import visitingcard1 from '../assets/images/visitingcard1.jpeg';
-import vmlogo from "../assets/images/vmlogo.jpeg"
+import vmlogo1 from "../assets/images/vmlogo1.jpeg"
 
 import { Link } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const Footer = () => {
           <p className="text-sm text-white">
            From First Bite to Forever Memory
           </p>
-          <img src={vmlogo}
+          <img src={vmlogo1}
            alt="VM Mohan Catering Visiting card"
            className='w-50 h-auto rounded-full' />
         </div>
@@ -37,11 +37,12 @@ const Footer = () => {
 
         {/* Social Media */}
         <div>
-          <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
-          <div className="flex space-x-4">
-           
-            <a href="" className="hover:text-blue-600">Facebook</a>
-            <a href="" className="hover:text-pink-500">Instagram</a>
+          <h3 className="text-lg font-semibold mb-2">Meet Us</h3>
+          <div>
+            <img src={visitingcard1}
+            alt="VM Mohan Catering Visiting Card"
+            className='w-auto h-70' />
+            
           </div>
         </div>
       </div>
